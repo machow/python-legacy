@@ -250,7 +250,7 @@ class PythonHandler(BaseHandler):
             The collected object-tree.
         """
         final_config = {}
-        for option in ("filters", "members"):
+        for option in ("filters", "members", "docstring_style"):
             if option in config:
                 final_config[option] = config[option]
             elif option in self.default_config:
